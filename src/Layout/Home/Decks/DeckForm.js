@@ -20,9 +20,9 @@ function DeckForm ({ deckId, handleSubmit, formData, changeHandler }) {
             <textarea id="description" className="form-control" name="description" value={formData.description} onChange={(event) => changeHandler(event)} required />
             </div>
 
-            {deckId ? <Link to={`/decks/${deckId}`} className="btn btn-secondary">Cancel</Link> : <Link to={`/`} className="btn btn-secondary">Cancel</Link>}
+            {deckId ? <Link to={`/decks/${deckId}`} className="btn btn-secondary mr-2 mt-2">Cancel</Link> : <Link to={`/`} className="btn btn-secondary mr-2 mt-2">Cancel</Link>}
 
-            <button type="submit"  className="btn btn-primary" onClick={handleSubmit}>Submit</button>
+            <button type="submit"  className="btn btn-primary mt-2" onClick={handleSubmit}>Submit</button>
         </form>
     )
 }

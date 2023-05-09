@@ -34,7 +34,7 @@ function CreateDeck() {
     <div>
         <nav aria-label="breadcrumb">
             <ol className="breadcrumb">      
-                <li className="breadcrumb-item"><Link to="/">Home</Link></li>  
+                <li className="breadcrumb-item mr-2"><Link to="/">Home</Link></li>  
                 <li className="breadcrumb-item active">Create Deck</li>          
              </ol>
         </nav>

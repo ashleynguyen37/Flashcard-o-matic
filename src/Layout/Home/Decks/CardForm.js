@@ -22,8 +22,8 @@ function CardForm({handleSubmit, formData, changeHandler, deckId}) {
                 <textarea id="back" name="back" className="form-control" value={formData.back} onChange={changeHandler} required />
             </div>
 
-                <Link to={`/decks/${deckId}`} className="btn btn-secondary">Cancel</Link>
-                <button type="submit"  className="btn btn-primary">Submit</button>
+                <Link to={`/decks/${deckId}`} className="btn btn-secondary mr-2 mt-2">Cancel</Link>
+                <button type="submit"  className="btn btn-primary mt-2">Submit</button>
             </form>
     )
 }
