@@ -11,8 +11,8 @@ function CardList({ deck , deleteCardHandler }) {
                     <div>{card.back}</div>
                 </div>
                 <div>
-                    <Link to={`${url}/cards/${card.id}/edit`} className="btn btn-secondary">Edit</Link>
-                    <button type="button" className="btn btn-danger" onClick={() => deleteCardHandler(card.id)}>Delete</button>
+                    <Link to={`${url}/cards/${card.id}/edit`} className="btn btn-secondary mr-2">Edit</Link>
+                    <button type="button" className="btn btn-danger ml-auto" onClick={() => deleteCardHandler(card.id)}>Delete</button>
                 </div>
             </div>
         </div>)

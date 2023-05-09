@@ -20,9 +20,9 @@ function DeckList({ decks = [], deleteHandler}) {
       <p>{`${deck.cards.length} cards`}</p>
       <p>{deck.description}</p> 
         <div className="row" style={{display: "flex", justifyContent: "left", margin: "8px"}}>
-          <Link to={`/decks/${deck.id}`} className="btn btn-secondary">View</Link>
-          <Link to={`/decks/${deck.id}/study`} className="btn btn-primary">study</Link>
-          <button type="button" onClick={() => deleteHandler(deck.id, signal)} className="btn btn-danger">Delete</button> 
+          <Link to={`/decks/${deck.id}`} className="btn btn-secondary mr-2">View</Link>
+          <Link to={`/decks/${deck.id}/study`} className="btn btn-primary mr-2">study</Link>
+          <button type="button" onClick={() => deleteHandler(deck.id, signal)} className="btn btn-danger ml-auto">Delete</button> 
         </div>
     </div>
     </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function DeckForm ({ deckId, submitHandler, formData, changeHandler }) {
+function DeckForm ({ deckId, handleSubmit, formData, changeHandler }) {
     return (
-        <form onSubmit={(event) => submitHandler(event)}>
+        <form onSubmit={(event) => handleSubmit(event)}>
             <div>
                 <label htmlFor="name">Name</label>
             </div>
@@ -22,7 +22,7 @@ function DeckForm ({ deckId, submitHandler, formData, changeHandler }) {
 
             {deckId ? <Link to={`/decks/${deckId}`} className="btn btn-secondary">Cancel</Link> : <Link to={`/`} className="btn btn-secondary">Cancel</Link>}
 
-            <button type="submit"  className="btn btn-primary">Submit</button>
+            <button type="submit"  className="btn btn-primary" onClick={handleSubmit}>Submit</button>
         </form>
     )
 }

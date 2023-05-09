@@ -2,15 +2,11 @@ import React from "react";
 import { useState , useEffect } from "react";
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
     Link,
-    useRouteMatch,
     useHistory
   } from "react-router-dom";
 import { listDecks, deleteDeck } from "../../utils/api";
 import DeckList from "./DeckList";
-import CreateDeck from "./CreateDeck/CreateDeck";
 
   function Home() {
 
@@ -48,7 +44,7 @@ async function deleteHandler(id, signal) {
     
     return (
         <div>
-            <Link to="/decks/new" className="btn btn-secondary">Create</Link>
+            <Link to="/decks/new" className="btn btn-secondary m-2">+ Create Deck</Link>
             <DeckList decks={decks} deleteHandler={deleteHandler} />
         </div>
     )

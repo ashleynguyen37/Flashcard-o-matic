@@ -68,10 +68,10 @@ function Deck() {
                 <h4>{deck.name}</h4>
                 <p>{deck.description}</p>
                 <div>
-                    <Link to={`${url}/edit`} className="btn btn-secondary">edit</Link>
-                    <Link to={`${url}/study`} className="btn btn-primary">study</Link>
-                    <Link to={`${url}/cards/new`} className="btn btn-primary">Add Cards</Link>
-                    <button type="button" onClick={() => deleteDeckHandler(deckId, abortController.signal)} className="btn btn-danger">Delete icon goes here</button>
+                    <Link to={`${url}/edit`} className="btn btn-secondary mr-2">edit</Link>
+                    <Link to={`${url}/study`} className="btn btn-primary mr-2">study</Link>
+                    <Link to={`${url}/cards/new`} className="btn btn-primary mr-2">Add Cards</Link>
+                    <button type="button" onClick={() => deleteDeckHandler(deckId, abortController.signal)} className="btn btn-danger ml-auto">Delete</button>
                 </div>
             </div>
 

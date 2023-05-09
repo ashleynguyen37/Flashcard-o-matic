@@ -1,24 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function CardForm({submitHandler, formData, changeHandler, deckId}) {
+function CardForm({handleSubmit, formData, changeHandler, deckId}) {
 
     return (
-        <form onSubmit={submitHandler}>
+        <form onSubmit={handleSubmit}>
 
-            <div className="row col-4">
+            <div>
                 <label htmlFor="front">front</label>
             </div>
 
-            <div className="row col-4">
+            <div>
                 <textarea id="front" name="front" className="form-control" value={formData.front} onChange={changeHandler} required /> 
             </div>
 
-            <div className="row col-4">
+            <div>
                 <label htmlFor="back">back</label>
             </div>
 
-            <div className="row col-4">
+            <div>
                 <textarea id="back" name="back" className="form-control" value={formData.back} onChange={changeHandler} required />
             </div>
 
