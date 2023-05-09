@@ -4,8 +4,6 @@ import { useState } from "react";
 import { createDeck } from "../../../utils/api";
 import DeckForm from "../Decks/DeckForm";
 
-
-
 function CreateDeck() {
 
   const abortController = new AbortController();
@@ -44,12 +42,6 @@ function CreateDeck() {
         <DeckForm handleSubmit={handleSubmit} formData={formData} changeHandler={changeHandler} />
     </div>
    )
-
-
-
-
-
-
 }
 
 export default CreateDeck

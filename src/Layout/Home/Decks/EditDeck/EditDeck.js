@@ -40,22 +40,12 @@ function EditDeck() {
             } catch(error) {console.log(error)};
         };
     
-        //getting and returning the deck fine but having issues setting state 
-        
         currentDeck(deckId);
         
         return () => abortController.abort()
     
         }, [deckId]);
 
-        //formData Stuff
-
-        
-        
-        
-           
-           
-        
            function changeHandler({ target }) {
             setFormData({
                 ...formData,
@@ -76,9 +66,6 @@ function EditDeck() {
             history.go(0);
 
            }
-
-           //may have to put this into a useEffect 
-           
 
     return (
         <div>

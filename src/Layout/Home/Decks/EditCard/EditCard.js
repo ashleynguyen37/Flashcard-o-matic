@@ -3,7 +3,6 @@ import { readCard, readDeck , updateCard } from "../../../../utils/api";
 import { useParams , Link , useHistory } from "react-router-dom";
 import CardForm from "../CardForm";
 
-
 function EditCard() {
 
     const initialCard = {
@@ -16,7 +15,6 @@ function EditCard() {
         description: "",
         cards: []
     }
-
 
     const { cardId , deckId } = useParams();
     const [card, setCard] = useState(initialCard);
@@ -39,16 +37,11 @@ function EditCard() {
             } catch(error) {console.log(error)};
         };
     
-        //getting and returning the deck fine but having issues setting state 
-        
         currentDeck(deckId, cardId);
         
         return () => abortController.abort()
     
         }, [deckId]);
-
-
-    
 
     function changeHandler({ target }) {
         setFormData({
@@ -68,10 +61,7 @@ function EditCard() {
        
         await updateCard(updatedCard, abortController.signal);
         history.go(0);
-
-       }
-
-
+        }
 
        return (
         <div>
@@ -87,9 +77,6 @@ function EditCard() {
 
         </div>
        )
-
-
-
 }
 
 export default EditCard

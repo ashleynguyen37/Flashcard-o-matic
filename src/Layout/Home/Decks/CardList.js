@@ -1,15 +1,8 @@
 import React from "react";
 import { Link , useRouteMatch } from "react-router-dom";
 
-
-
 function CardList({ deck , deleteCardHandler }) {
-
     const { url } = useRouteMatch();
-
-    
-  
- 
     const list = deck.cards.map(card => {
       return  ( <div className="card" key={card}>
             <div className="card-body" >
@@ -25,14 +18,11 @@ function CardList({ deck , deleteCardHandler }) {
         </div>)
     });
  
-
-
     return (
         <div>
             {list}
         </div>
     )
-
 }
 
 export default CardList

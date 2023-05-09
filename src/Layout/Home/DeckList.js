@@ -29,11 +29,7 @@ function DeckList({ decks = [], deleteHandler}) {
     )
     })
 
-    
-
     return <div>{listing}</div>
-
-
 }
 
 export default DeckList

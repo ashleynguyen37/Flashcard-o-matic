@@ -26,9 +26,6 @@ function CardForm({submitHandler, formData, changeHandler, deckId}) {
                 <button type="submit"  className="btn btn-primary">Submit</button>
             </form>
     )
-
-
-
 }
 
 export default CardForm
