@@ -2,7 +2,14 @@ import React from "react";
 import Header from "./Header";
 import NotFound from "./NotFound";
 import { Route, Switch } from "react-router-dom";
-import Home from "./Home";
+import Home from "./Home/Home";
+import CreateDeck from "./Home/CreateDeck/CreateDeck";
+import Deck from "./Home/Decks/Deck";
+import AddCard from "./Home/Decks/AddCard/AddCard";
+import EditCard from "./Home/Decks/EditCard/EditCard";
+import EditDeck from "./Home/Decks/EditDeck/EditDeck";
+import Study from "./Home/Study";
+
 
 function Layout() {
   return (
