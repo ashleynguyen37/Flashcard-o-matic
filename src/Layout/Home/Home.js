@@ -37,7 +37,7 @@ async function deleteHandler(id, signal) {
            try {
             
             await deleteDeck(id, signal);
-            history.push("/")
+            history.go(0)
           } catch (error) {console.log(error)}
           }
         }
