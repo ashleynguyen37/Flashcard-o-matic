@@ -4,7 +4,7 @@ import { Link , useRouteMatch } from "react-router-dom";
 function CardList({ deck , deleteCardHandler }) {
     const { url } = useRouteMatch();
     const list = deck.cards.map(card => {
-      return  ( <div className="card" key={card}>
+      return  ( <div className="card" key={card.id}>
             <div className="card-body" >
                 <div className="row" style={{display: "flex", justifyContent: "space-evenly", fontSize: "20px"}}>
                     <div>{card.front}</div>

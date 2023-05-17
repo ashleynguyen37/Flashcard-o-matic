@@ -52,9 +52,11 @@ function AddCard() {
 
        async function submitHandler(event) {
         event.preventDefault(); 
+        console.log({formData});
         await createCard(deckId, formData, abortController.signal)
-        history.go(0);
+        history.push(`/decks/${deckId}`);
        }
+    //    console.log({formData});
 
     return (
         <div>
